@@ -3,14 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "node": ">=20.0.0",
-    "npm": ">=10.0.0"
+    "node": "20.9.0",
+    "npm": "10.2.3"
   },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "npx serve out",
-    "lint": "next lint"
+    "lint": "next lint",
+    "clean": "rm -rf .next out",
+    "prebuild": "npm run clean",
+    "postbuild": "next-sitemap --config next-sitemap.config.js"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",

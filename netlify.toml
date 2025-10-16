@@ -1,13 +1,33 @@
 [build]
   command = "npm run build"
   publish = "out"
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF ./src"
 
 [build.environment]
   NODE_VERSION = "20.9.0"
   NODE_ENV = "production"
-  NPM_FLAGS = "--no-optional"
+  NPM_FLAGS = "--no-optional --prefer-offline --no-audit"
   NETLIFY_USE_PNPM = "false"
   NETLIFY_USE_YARN = "false"
+  NEXT_TELEMETRY_DISABLED = "1"
+  CI = "1"
+
+[build.processing]
+  skip_processing = true
+
+[build.processing.css]
+  bundle = true
+  minify = true
+
+[build.processing.js]
+  bundle = true
+  minify = true
+
+[build.processing.images]
+  compress = true
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
+  [plugins.inputs]
+    enable = true
+    experimentalPageCaching = true
