@@ -1,0 +1,395 @@
+{
+  "products": [
+   
+  {
+    "id": 1,
+    "name": "Gopuram Meenakshi Kumkum",
+    "category": "Pooja Items",
+    "image": "/images/gopuram-meenakshi-kumkum.jpg",
+    "description": "Premium natural kumkum made from pure ingredients for traditional rituals and daily worship."
+  },
+  {
+    "id": 2,
+    "name": "Aragaja",
+    "category": "Pooja Items",
+  "image": "/images/aragaja.jpg",
+    "description": "Traditional herbal paste used in pooja for its divine fragrance and purity."
+  },
+  {
+    "id": 3,
+    "name": "Thazhampoo Kumkum",
+    "category": "Pooja Items",
+  "image": "/images/thazhampoo-kumkum.jpg",
+    "description": "Fragrant kumkum infused with thazhampoo essence for auspicious rituals."
+  },
+  {
+    "id": 4,
+    "name": "Ven Kadugu",
+    "category": "Traditional Ingredients",
+  "image": "/images/ven-kadugu.jpg",
+    "description": "Pure white mustard seeds used in rituals and herbal remedies."
+  },
+  {
+    "id": 5,
+    "name": "Padikaram",
+    "category": "Traditional Ingredients",
+  "image": "/images/padikaram.jpg",
+    "description": "Natural alum crystal used for purification and healing purposes."
+  },
+  {
+    "id": 6,
+    "name": "Paruthi Vidhai",
+    "category": "Herbal Ingredients",
+  "image": "/images/paruthi-vidhai.jpg",
+    "description": "Cotton seeds used in traditional medicine and herbal preparations."
+  },
+  {
+    "id": 7,
+    "name": "Vetiver",
+    "category": "Herbal Ingredients",
+  "image": "/images/vetiver.jpg",
+    "description": "Cooling aromatic roots used for fragrance, skincare, and pooja."
+  },
+  {
+    "id": 8,
+    "name": "Neeli Avuri",
+    "category": "Herbal Ingredients",
+  "image": "/images/neeli-avuri.jpg",
+    "description": "Natural herb traditionally used for hair care and wellness."
+  },
+  {
+    "id": 9,
+    "name": "Nalangu Maavu",
+    "category": "Herbal Bath Powder",
+  "image": "/images/nalangu-maavu.jpg",
+    "description": "Herbal bath powder made with turmeric and sandalwood for smooth glowing skin."
+  },
+  {
+    "id": 10,
+    "name": "Shikakai Powder",
+    "category": "Herbal Hair Care",
+  "image": "/images/shikakai-powder.jpg",
+    "description": "Natural cleanser that strengthens hair and promotes healthy shine."
+  },
+  {
+    "id": 11,
+    "name": "Turmeric Powder",
+    "category": "Herbal Ingredients",
+  "image": "/images/turmeric-powder.jpg",
+    "description": "Pure turmeric powder known for its antiseptic and divine properties."
+  },
+  {
+    "id": 12,
+    "name": "Kasthuri Turmeric Powder",
+    "category": "Herbal Skincare",
+  "image": "/images/kasthuri-turmeric-powder.jpg",
+    "description": "Fragrant turmeric variety for glowing and blemish-free skin."
+  },
+  {
+    "id": 13,
+    "name": "Chandan Powder",
+    "category": "Pooja & Fragrance",
+  "image": "/images/chandan-powder.jpg",
+    "description": "Fine sandalwood powder used in pooja and for divine aroma."
+  },
+  {
+    "id": 14,
+    "name": "Chandan Tikka Paste",
+    "category": "Pooja Items",
+  "image": "/images/chandan-tikka-paste.jpg",
+    "description": "Ready-to-use sandal paste for tilak and spiritual ceremonies."
+  },
+  {
+    "id": 15,
+    "name": "Sandalwood Tablets",
+    "category": "Pooja Items",
+  "image": "/images/sandalwood-tablets.jpg",
+    "description": "Solid sandalwood tablets offering long-lasting aroma for pooja use."
+  },
+  {
+    "id": 16,
+    "name": "Virali Manjal",
+    "category": "Herbal Ingredients",
+  "image": "/images/virali-manjal.jpg",
+    "description": "Dried turmeric fingers used in traditional worship and skincare."
+  },
+  {
+    "id": 17,
+    "name": "Kizhangu Manjal",
+    "category": "Herbal Ingredients",
+  "image": "/images/kizhangu-manjal.jpg",
+    "description": "Raw turmeric roots used for auspicious rituals and natural remedies."
+  },
+  {
+    "id": 18,
+    "name": "Dhoop Cup",
+    "category": "Fragrance & Dhoop",
+  "image": "/images/dhoop-cup.jpg",
+    "description": "Aromatic dhoop cups for purifying spaces with soothing fragrance."
+  },
+  {
+    "id": 19,
+    "name": "Dasangam",
+    "category": "Fragrance & Dhoop",
+  "image": "/images/dasangam.jpg",
+    "description": "Blend of ten sacred herbs used for incense and divine rituals."
+  },
+  {
+    "id": 20,
+    "name": "Panchakavya Dhoop Cup",
+    "category": "Fragrance & Dhoop",
+  "image": "/images/panchakavya-dhoop-cup.jpg",
+    "description": "Eco-friendly dhoop made from panchakavya for spiritual purification."
+  },
+  {
+    "id": 21,
+    "name": "Sambrani",
+    "category": "Fragrance & Dhoop",
+  "image": "/images/sambrani.jpg",
+    "description": "Traditional resin that fills homes with calming and divine aroma."
+  },
+  {
+    "id": 22,
+    "name": "Green Camphor",
+    "category": "Fragrance & Dhoop",
+  "image": "/images/green-camphor.jpg",
+    "description": "High-quality camphor used for pooja and air purification."
+  },
+  {
+    "id": 23,
+    "name": "Incense Sticks / Agarbatti",
+    "category": "Fragrance & Dhoop",
+  "image": "/images/incense-sticks-agarbatti.jpg",
+    "description": "Long-lasting aromatic sticks ideal for pooja and meditation."
+  },
+  {
+    "id": 24,
+    "name": "Camphor Katti",
+    "category": "Pooja Items",
+  "image": "/images/camphor-katti.jpg",
+    "description": "Solid camphor blocks used in daily pooja and rituals."
+  },
+  {
+    "id": 25,
+    "name": "Neem Oil",
+    "category": "Herbal Oil",
+  "image": "/images/neem-oil.jpg",
+    "description": "Natural neem oil known for its antiseptic and healing properties."
+  },
+  
+  {
+    "id": 26,
+    "name": "Vilaku Ghee",
+    "category": "Pooja Items",
+  "image": "/images/vilaku-ghee.jpg",
+    "description": "Pure ghee for lighting lamps and performing auspicious rituals."
+  },
+  {
+    "id": 27,
+    "name": "Mahua Seed Oil (Ilupai Oil)",
+    "category": "Pooja Oil",
+  "image": "/images/mahua-seed-oil.jpg",
+    "description": "Traditional ilupai oil used in lamps for divine illumination."
+  },
+  {
+    "id": 28,
+    "name": "Puja Ghee",
+    "category": "Pooja Items",
+  "image": "/images/puja-ghee.jpg",
+    "description": "Pure ghee specially made for pooja lamps and homam rituals."
+  },
+  {
+    "id": 29,
+    "name": "Pancha Deepam Oil / Lamp Oil",
+    "category": "Pooja Oil",
+  "image": "/images/pancha-deepam-oil.jpg",
+    "description": "Blend of five sacred oils for lighting lamps during daily worship."
+  },
+  {
+    "id": 30,
+    "name": "Sandhanadi Thailam",
+    "category": "Herbal Oil",
+  "image": "/images/chandanadi-thailam.jpg",
+    "description": "Cooling herbal oil enriched with sandalwood for body massage."
+  },
+  {
+    "id": 31,
+    "name": "Deepam Lamp Oil",
+    "category": "Pooja Oil",
+  "image": "/images/deepam-lamp-oil.jpg",
+    "description": "High-quality lamp oil for steady and bright illumination in pooja."
+  },
+  {
+    "id": 32,
+    "name": "Rose Water (Paneer)",
+    "category": "Pooja Items",
+  "image": "/images/rose-water.jpg",
+    "description": "Pure rose water for abishegam and fragrance in rituals."
+  },
+  {
+    "id": 33,
+    "name": "Cotton Wicks - Green",
+    "category": "Wicks & Lamps",
+  "image": "/images/cotton-wicks-green.jpg",
+    "description": "Soft green cotton wicks for lamps and daily pooja."
+  },
+  {
+    "id": 34,
+    "name": "Cotton Wicks",
+    "category": "Wicks & Lamps",
+  "image": "/images/Cotton Wicks.jpg",
+    "description": "Pure cotton wicks for oil lamps and temple use."
+  },
+  {
+    "id": 35,
+    "name": "Vaazhai Thandu Thiri",
+    "category": "Wicks & Lamps",
+  "image": "/images/vaazhai-thandu-thiri.jpg",
+    "description": "Natural banana stem wicks used in traditional oil lamps."
+  },
+  {
+    "id": 36,
+    "name": "Mupari Nool",
+    "category": "Pooja Accessories",
+  "image": "/images/mupari-nool.jpg",
+    "description": "Sacred thread used for temple and homam rituals."
+  },
+  {
+    "id": 37,
+    "name": "Cotton Wicks - Black",
+    "category": "Wicks & Lamps",
+  "image": "/images/cotton-wicks-black.jpg",
+    "description": "Black cotton wicks for deepam lighting during pooja."
+  },
+  {
+    "id": 38,
+    "name": "Cotton Wicks - Red",
+    "category": "Wicks & Lamps",
+  "image": "/images/cotton-wicks-red.jpg",
+    "description": "Bright red cotton wicks for festive lamp lighting."
+  },
+  {
+    "id": 39,
+    "name": "Cotton Wicks - Yellow",
+    "category": "Wicks & Lamps",
+  "image": "/images/cotton-wicks-yellow.jpg",
+    "description": "Yellow-colored cotton wicks used in temple lamps."
+  },
+  {
+    "id": 40,
+    "name": "Thamarai Thiri",
+    "category": "Wicks & Lamps",
+  "image": "/images/thamarai-thiri.jpg",
+    "description": "Lotus-shaped wicks that bring divine light to pooja rituals."
+  },
+  {
+    "id": 41,
+    "name": "Namakatti",
+    "category": "Pooja Items",
+  "image": "/images/namakatti.jpg",
+    "description": "Traditional white clay used for sacred markings and pooja."
+  },
+  {
+    "id": 42,
+    "name": "Abishegam Powder",
+    "category": "Pooja Powder",
+  "image": "/images/abhishegam-powder.jpg",
+    "description": "Herbal mixture used for abishegam and temple rituals."
+  },
+  {
+    "id": 43,
+    "name": "Theertha Powder",
+    "category": "Pooja Powder",
+  "image": "/images/theertha-powder.jpg",
+    "description": "Traditional sacred powder for preparing holy water."
+  },
+  {
+    "id": 44,
+    "name": "Punugu",
+    "category": "Fragrance & Dhoop",
+  "image": "/images/punugu.jpg",
+    "description": "Natural resin perfume used in temples and spiritual offerings."
+  },
+  {
+    "id": 45,
+    "name": "Vibhuti",
+    "category": "Pooja Items",
+  "image": "/images/vibhuti.jpg",
+    "description": "Sacred ash applied on the forehead during worship."
+  },
+  {
+    "id": 46,
+    "name": "Sandal Malai",
+    "category": "Pooja Accessories",
+  "image": "/images/sandal-malai.jpg",
+    "description": "Fragrant sandalwood garland used for deity decoration."
+  },
+  {
+    "id": 47,
+    "name": "Tulasi Malai",
+    "category": "Pooja Accessories",
+  "image": "/images/tulasi-malai.jpg",
+    "description": "Sacred tulsi mala symbolizing devotion and purity."
+  },
+  {
+    "id": 48,
+    "name": "Rudraksha Malai",
+    "category": "Pooja Accessories",
+  "image": "/images/rudraksha-malai.jpg",
+    "description": "Spiritual mala made from rudraksha beads for meditation."
+  },
+  {
+    "id": 49,
+    "name": "Darbai Grass",
+    "category": "Pooja Items",
+  "image": "/images/darbai-grass.jpg",
+    "description": "Sacred darbai grass essential for all Vedic rituals."
+  },
+  {
+    "id": 50,
+    "name": "Pooja Vessel Cleaning Powder",
+    "category": "Cleaning Essentials",
+  "image": "/images/pooja-vessel-cleaning-powder.jpg",
+    "description": "Natural cleaning powder to shine brass and copper vessels."
+  },
+  {
+    "id": 51,
+    "name": "Nelpori",
+    "category": "Traditional Ingredients",
+  "image": "/images/nelpori.jpg",
+    "description": "Crispy puffed rice used for pooja offerings and prasadam."
+  },
+  {
+    "id": 52,
+    "name": "Navadhanyam Set",
+    "category": "Pooja Items",
+  "image": "/images/navadhanyam-set.jpg",
+    "description": "Set of nine grains symbolizing prosperity and used in rituals."
+  },
+  {
+    "id": 53,
+    "name": "Attar",
+    "category": "Fragrance & Dhoop",
+  "image": "/images/attar.jpg",
+    "description": "Pure natural perfume oil for spiritual and daily use."
+  },
+  {
+    "id": 54,
+    "name": "Javadhu Powder",
+    "category": "Fragrance & Dhoop",
+  "image": "/images/javadhu-powder.jpg",
+    "description": "Divine herbal body fragrance made with sandal and herbs."
+  },
+  {
+    "id": 55,
+    "name": "Kolam Powder",
+    "category": "Traditional Essentials",
+  "image": "/images/kolam-powder.jpg",
+    "description": "Smooth white powder used for drawing daily kolams at home."
+  }
+]
+
+
+
+  
+}

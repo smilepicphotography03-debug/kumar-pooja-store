@@ -1,103 +1,200 @@
-import Image from "next/image";
+'use client';
 
-export default function Home() {
+import { motion } from 'framer-motion';
+import Link from 'next/link';
+import Image from 'next/image';
+
+export default function HomePage() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <main className="bg-gradient-to-b from-orange-100 to-white text-gray-800 min-h-screen">
+      {/* Hero Section with Background Image */}
+      <section className="relative flex flex-col items-center justify-center text-center py-32 px-6 overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/temple_background.jpg"
+            alt="Temple Background"
+            fill
+            priority
+            className="object-cover opacity-70"
+          />
+          <div className="absolute inset-0 bg-orange-900/40"></div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+
+        {/* Hero Text */}
+        <motion.div
+          initial={{ opacity: 0, y: -30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="relative z-10"
         >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 drop-shadow-lg">
+            Kumar Pooja Store
+          </h1>
+          <p className="text-lg md:text-xl text-orange-100 max-w-2xl mx-auto">
+            Divine Traditions. Pure Offerings.
+          </p>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.8 }}
+          className="relative z-10 mt-8"
         >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+          <Link
+            href="/products"
+            className="bg-orange-600 text-white px-6 py-3 rounded-full text-lg hover:bg-orange-700 transition shadow-md"
+          >
+            Browse Products
+          </Link>
+        </motion.div>
+      </section>
+
+      {/* About Section */}
+      <section className="bg-white py-16 px-6 text-center">
+        <motion.h2
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+          className="text-3xl md:text-4xl font-semibold text-orange-800 mb-6"
         >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+          About Kumar Pooja Store
+        </motion.h2>
+
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.3 }}
+          viewport={{ once: true }}
+          className="text-gray-700 max-w-3xl mx-auto leading-relaxed"
+        >
+          With over 25 years of devotion and expertise, <strong>Kumar Pooja Store</strong> offers a curated collection of handcrafted incense, pure pooja essentials, and premium spiritual products. 
+          Rooted in Indian tradition and guided by eco-conscious values, we bring the essence of spirituality to your home — inspiring purity, faith, and divine connection.
+        </motion.p>
+      </section>
+
+      {/* Gallery Section */}
+      <section className="py-16 bg-orange-50 px-6">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+          {[
+            { src: '/images/oil.jpg', alt: 'Oil for Pooja' },
+            { src: '/images/agarbathi.jpg', alt: 'Agarbathi' },
+            { src: '/images/camphor.jpg', alt: 'Camphor for Pooja' },
+          ].map((img, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, delay: index * 0.2 }}
+              viewport={{ once: true }}
+              className="rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition-transform"
+            >
+              <Image
+                src={img.src}
+                alt={img.alt}
+                width={500}
+                height={350}
+                className="w-full h-64 object-cover"
+              />
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-orange-800 text-white py-10 px-6 text-center md:text-left">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-10">
+          {/* Left: Store Info */}
+          {/* 
+          <div>
+            <h4 className="text-xl font-semibold mb-2">Kumar Pooja Store</h4>
+            <p className="text-orange-100">
+              Divine Traditions. Pure Offerings.
+            </p>
+          </div>
+          */}
+
+          {/* Middle: Business Info */}
+          <div>
+            <h4 className="text-xl font-semibold mb-2">Business Information</h4>
+            <p>94898 30438, 94896 57260</p>
+            <p>kumarpoojastore@gmail.com</p>
+            <p>Ambai Rd, Opp. TPV Multiplex, Alangulam, Tamil Nadu</p>
+          </div>
+
+          {/* Right: Quick Links */}
+          <div>
+            <h4 className="text-xl font-semibold mb-2">Quick Links</h4>
+            <ul className="space-y-2">
+              <li><Link href="/products" className="hover:underline">Products</Link></li>
+              <li><Link href="/contact" className="hover:underline">Contact</Link></li>
+              <li>
+                <a
+                  href="https://wa.me/919489657260"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                >
+                  WhatsApp
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        {/* FAQ Section */}
+    <div className="md:col-span-2">
+      <h4 className="text-xl font-semibold mb-4 text-center md:text-left">FAQ</h4>
+      <ul className="space-y-3">
+        <li>
+          <details className="bg-orange-700/40 rounded-md p-3">
+            <summary className="cursor-pointer font-semibold">What products do you offer?</summary>
+            <p className="mt-2 text-orange-100 text-sm">
+              We offer a wide range of pooja items including lamps, oils, kumkum, agarbathis, and traditional essentials.
+            </p>
+          </details>
+        </li>
+        <li>
+          <details className="bg-orange-700/40 rounded-md p-3">
+            <summary className="cursor-pointer font-semibold">Do you provide home delivery?</summary>
+            <p className="mt-2 text-orange-100 text-sm">
+              Yes, we provide local home delivery. Please contact us for delivery options and charges.
+            </p>
+          </details>
+        </li>
+        <li>
+          <details className="bg-orange-700/40 rounded-md p-3">
+            <summary className="cursor-pointer font-semibold">Can I place bulk or temple orders?</summary>
+            <p className="mt-2 text-orange-100 text-sm">
+              Absolutely! We handle bulk and temple orders. You can contact us via phone or WhatsApp for inquiries.
+            </p>
+          </details>
+        </li>
+      </ul>
     </div>
+  
+
+        {/* Policies Section at Bottom */}
+        <div className="border-t border-orange-700 mt-10 pt-6 text-center text-orange-200">
+          <ul className="flex flex-col md:flex-row justify-center gap-4 text-sm">
+            <li>
+              <Link href="/privacy-policy" className="hover:underline">
+                Privacy Policy
+              </Link>
+            </li>
+            <li>
+              <Link href="/terms-and-conditions" className="hover:underline">
+                Terms & Conditions
+              </Link>
+            </li>
+          </ul>
+
+          <p className="mt-4 text-orange-300">
+            © 2025 All rights reserved. Kumar Pooja Store.
+          </p>
+        </div>
+      </footer>
+    </main>
   );
 }
