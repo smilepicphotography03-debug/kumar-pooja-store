@@ -4,7 +4,7 @@
   ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF ./src"
 
 [build.environment]
-  NODE_VERSION = "20.9.0"
+  NODE_VERSION = "20"
   NODE_ENV = "production"
   NPM_FLAGS = "--no-optional --prefer-offline --no-audit"
   NETLIFY_USE_PNPM = "false"
