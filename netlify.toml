@@ -28,6 +28,3 @@
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
-  [plugins.inputs]
-    enable = true
-    experimentalPageCaching = true
