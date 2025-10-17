@@ -1,6 +1,5 @@
 'use client';
 
-import { motion } from 'framer-motion';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -22,57 +21,35 @@ export default function HomePage() {
         </div>
 
         {/* Hero Text */}
-        <motion.div
-          initial={{ opacity: 0, y: -30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="relative z-10"
-        >
+        <div className="relative z-10">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 drop-shadow-lg">
             Kumar Pooja Store
           </h1>
           <p className="text-lg md:text-xl text-orange-100 max-w-2xl mx-auto">
             Divine Traditions. Pure Offerings.
           </p>
-        </motion.div>
+        </div>
 
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.8 }}
-          className="relative z-10 mt-8"
-        >
+        <div className="relative z-10 mt-8">
           <Link
             href="/products"
             className="bg-orange-600 text-white px-6 py-3 rounded-full text-lg hover:bg-orange-700 transition shadow-md"
           >
             Browse Products
           </Link>
-        </motion.div>
+        </div>
       </section>
 
       {/* About Section */}
       <section className="bg-white py-16 px-6 text-center">
-        <motion.h2
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
-          viewport={{ once: true }}
-          className="text-3xl md:text-4xl font-semibold text-orange-800 mb-6"
-        >
+        <h2 className="text-3xl md:text-4xl font-semibold text-orange-800 mb-6">
           About Kumar Pooja Store
-        </motion.h2>
+        </h2>
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.3 }}
-          viewport={{ once: true }}
-          className="text-gray-700 max-w-3xl mx-auto leading-relaxed"
-        >
+        <p className="text-gray-700 max-w-3xl mx-auto leading-relaxed">
           With over 25 years of devotion and expertise, <strong>Kumar Pooja Store</strong> offers a curated collection of handcrafted incense, pure pooja essentials, and premium spiritual products. 
           Rooted in Indian tradition and guided by eco-conscious values, we bring the essence of spirituality to your home — inspiring purity, faith, and divine connection.
-        </motion.p>
+        </p>
       </section>
 
       {/* Gallery Section */}
@@ -83,12 +60,8 @@ export default function HomePage() {
             { src: '/images/agarbathi.jpg', alt: 'Agarbathi' },
             { src: '/images/camphor.jpg', alt: 'Camphor for Pooja' },
           ].map((img, index) => (
-            <motion.div
+            <div
               key={index}
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6, delay: index * 0.2 }}
-              viewport={{ once: true }}
               className="rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition-transform"
             >
               <Image
@@ -98,7 +71,7 @@ export default function HomePage() {
                 height={350}
                 className="w-full h-64 object-cover"
               />
-            </motion.div>
+            </div>
           ))}
         </div>
       </section>
